@@ -1,0 +1,58 @@
+### Employee Feedback API Testing
+
+### Get all feedback
+GET http://localhost:5000/feedback
+### Get HR department summary
+GET http://localhost:5000/feedback/summary?department=HR
+
+### Get Engineering department summary  
+GET http://localhost:5000/feedback/summary?department=Engineering
+### Get Marketing department summary  
+GET http://localhost:5000/feedback/summary?department=Marketing
+
+
+
+### Create new feedback
+POST http://localhost:5000/feedback
+Content-Type: application/json
+
+{
+    "text": "Amazing work culture",
+    "rating": 4,
+    "department": "Engineering"
+}
+### Create feedback without text
+POST http://localhost:5000/feedback
+Content-Type: application/json
+
+{
+    "rating": 3,
+    "department": "Marketing"
+}
+
+### Test validation
+POST http://localhost:5000/feedback
+Content-Type: application/json
+
+{
+    "rating": 6,
+    "department": "HR"
+}
+### Hr feedback
+POST http://localhost:5000/feedback
+Content-Type: application/json
+
+{
+    "text": "Great communication",
+    "rating": 4,
+    "department": "HR"
+}  
+
+### Engineering feedback
+POST http://localhost:5000/feedback
+Content-Type: application/json
+
+{
+    "rating": 4,
+    "department": "Engineering"
+}
