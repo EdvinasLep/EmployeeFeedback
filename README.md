@@ -16,7 +16,7 @@ This is a REST API that lets employees:
 - Entity Framework Core (for database)
 - SQLite (lightweight database file)
 
-![Get All Feedback](screenshot1.png)
+![Get All Feedback](ScreenShot1.png)
 *Screenshot showing the GET all feedback endpoint working*
 
 ## API Endpoints (What you can do)
